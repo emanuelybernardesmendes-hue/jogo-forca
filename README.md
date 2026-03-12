@@ -4,68 +4,7 @@ import random
 
 def escolher_palavra():
     palavras = ["python", "desenvolvimento", "algoritmo", "computador", "jogo", "programacao"]
-    return random.choice(palavras)
-
-def exibir_forca(tentativas):
-    forcas = [
-        """
-         -----
-         |   |
-             |
-             |
-             |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-             |
-             |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-         |   |
-             |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-        /|   |
-             |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-        /|\\  |
-             |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-        /|\\  |
-        /    |
-             |
-        """,
-        """
-         -----
-         |   |
-         O   |
-        /|\\  |
-        / \\  |
-             |
-        """
-    ]
-    print(forcas[tentativas])
+    return random.choice(palavras)  
 
 def jogar_forca():
     palavra = escolher_palavra()
